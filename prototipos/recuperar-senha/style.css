@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+body{
+    background-color: #e6ffe2;
+}
+
+div#recuperacao {
+
+    background-color:#85C97A;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    text-align: center;
+    font-family: roboto;
+    border-radius: 10px;
+    color: #000000;
+
+}
+div#recuperacao form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+div#recuperacao label,input{
+    display: block;
+    width: 100%;
+    text-align: left;
+    
+}
+div#recuperacao input{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: none;
+    
+}
+div#recuperacao a,label{
+    font-size: .9rem;
+    text-decoration: none;
+}
+div#recuperacao input#button{
+    background-color: #565656;
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin-left: 120px;
+    margin-top: 5px;
+}
+img{
+    width: 200px;
+}
