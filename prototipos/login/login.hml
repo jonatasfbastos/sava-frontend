@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" 
+          type="image/png" 
+          href="" />
+</head>
+<body>
+    <div id="login">
+
+        <h1>Login</h1>
+        <form action="">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            <a href="../ifba.edu.sava.view.login.recuperar/recuperarlogin.html">Esqueceu a senha?</a>
+            <input type="submit" value="Entrar" id="button">
+            <a href="">Registra-se</a>
+
+            
+        </form>
+
+
+        
+
+
+    </div>
+    
+</body>
+</html>
