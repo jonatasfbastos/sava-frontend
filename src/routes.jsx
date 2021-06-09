@@ -1,39 +1,20 @@
-import { BrowserRouter, Route } from 'react-router-dom';
-import logo from "./logo.svg";
+import { 
+  BrowserRouter,
+  Route,
+}from 'react-router-dom';
+import App from "./App";
+import login from "./pages/Login/login";
 
 
-function Routes() {
 
-  return (
-    <BrowserRouter >
-    {/* Aqui ficará as rotas para cada page,
-    mas por enquanto coloquei isso ai só pra exibir algo*/}
-
-      <Route path="/">
-      <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-      </Route>
-
-      {/* <Route path="/login">
-        <Login />
-      </Route> */}
-
+function Routes(){
+  return(
+    <BrowserRouter>
+      <Route path="/" exact component={App} />
+      <Route path="/login" component={login} />
     </BrowserRouter>
-  )
+  );
 }
 
 export default Routes;
+

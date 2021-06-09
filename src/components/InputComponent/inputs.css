@@ -1,0 +1,107 @@
+input{
+    border-radius:5px;
+    height:40px;
+    outline: none;
+    border:1px solid white;
+    text-align:left;
+}
+
+/*input do senha*/
+.inputUser{
+    text-align:left;
+    padding:10px;
+    margin-left:10px;
+}
+
+/*input do usuario*/
+.inputPass{
+    margin-bottom:30px;
+    text-align: left;
+    padding:10px;
+    margin-left:10px;
+}
+
+
+
+@media (max-width:599px){
+    input{
+        border-radius:5px;
+        height:40px;
+        outline: none;
+        border:1px solid white;
+    }
+
+    .inputUser{
+        margin-top: 10px;
+        font-weight:300;
+        font-size:1.2rem;
+        width: 75%;
+    }
+    
+    .inputPass{
+        margin-top: 10px;
+        font-weight:300;
+        font-size:1.2rem;
+        width: 75%;
+    }
+}
+
+@media (min-width:600px){
+    input{
+        border-radius:5px;
+        height:35px;
+        outline: none;
+        border:1px solid white;
+    }
+    .inputUser{
+        margin-top: 10px;
+        font-weight:500;
+        width: 75%;
+    }
+    
+    .inputPass{
+        margin-top: 10px;
+        font-weight:500;
+        width: 75%;
+    }
+}
+
+@media(min-width:900px){
+    input{
+        border-radius:5px;
+        height:35px;
+        outline: none;
+        border:1px solid white;
+    }
+    .inputUser{
+        margin-top: 10px;
+        font-weight:500;
+        width: 75%;
+    }
+    
+    .inputPass{
+        margin-top: 10px;
+        font-weight:500;
+        width: 75%;
+    }
+}
+
+@media(min-width:1200px){
+    input{
+        border-radius:5px;
+        height:35px;
+        outline: none;
+        border:1px solid white;
+    }
+    .inputUser{
+        margin-top: 10px;
+        font-weight:700;
+        width: 75%;
+    }
+    
+    .inputPass{
+        margin-top: 10px;
+        font-weight:700;
+        width: 75%;
+    }
+}
