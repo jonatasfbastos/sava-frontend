@@ -8,9 +8,7 @@ import logo from '../../ifba.svg';
 
 import './login.css';
 
-const sava = 'SAVA';
 const login = 'Login';
-const pass = 'Senha';
 
 export default class LoginPages extends Component{
 
