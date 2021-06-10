@@ -3,8 +3,32 @@
 
 :root{
     --radius:5px;
-    --color-button: #565656;
-    --background-form: #85C97A;
-    --background: #e6ffe2;
+
+    --color-button: #000000; /*para não dar conflito.*/
+    
+    /*gradient button*/
+    --background-button-left: #313033;
+    --background-button-middle: #323232;
+    --background-button-right:#313033;
+
+
+     /*gradient button - active*/
+    --background-button-focus-left:#565656;
+    --background-button-focus-middle: #545454;
+    --background-button-focus-right: #565656;
+
+    /* form background*/
+    --background-form: #dbd9ee;
+    /*background view*/
+    --background: #f3f3fa;
+    /*font weight default*/
     --font-default-weight: 700;
+    /*background input color*/
+    --background-input: #474761;
+    /*color text form out */
+    --color-text-form-out: #474761;
+    /*color text form out when make focus. */
+    --color-text-form-out-focus: #474861;
+    /*color text form in */
+    --color-text-form-in: #f3f3fa;
 }
