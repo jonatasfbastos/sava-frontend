@@ -7,6 +7,13 @@
     padding:0;
     box-sizing: border-box;
 }
+
+.lock-icon{
+  height: 2vmin;
+  position: relative;
+  top:25px;
+  left:-15px;
+}
   
 .App {
     /*text-align: center;*/
@@ -29,14 +36,19 @@
     color: black;
   }
 
-
-  .input-fields{
-    padding:0;
+  .App-line{
+    text-align: left;
+    padding-left:65px;
   }
-
   
   .App-link {
-    color: #61dafb;
+    color: var(--color-text-form-out);
+    text-decoration: none;
+  }
+
+  .App-link:focus{
+    color: var(--color-text-form-out-focus);
+    text-decoration: none;
   }
 
   .App-form{
@@ -45,10 +57,11 @@
       box-shadow: 0px 0px 10px #565656;
   }
 
-  .App-h1{
-      color:black;
+  .App-title{
+      color:var(--color-text-form-out);
       text-align:center;
       font-size:2rem;
+      padding-left:5px;
   }
 
   .App-label{

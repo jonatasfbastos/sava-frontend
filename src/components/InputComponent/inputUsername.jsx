@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './inputs.css';
 
-const tag_nick = 'Digite o seu login';
+const tag_nick = 'Usuário:';
 
 export default class InputUser extends Component{
     render(){

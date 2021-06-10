@@ -1,3 +1,6 @@
+
+@import url("../../styles/global.css");
+
 input{
     border-radius:5px;
     height:40px;
@@ -8,17 +11,29 @@ input{
 
 /*input do senha*/
 .inputUser{
+    background: var(--background-input);
+    color: var(--color-text-form-in);
     text-align:left;
     padding:10px;
     margin-left:10px;
 }
 
+.inputUser::placeholder{
+    color:var(--color-text-form-in);
+}
+
 /*input do usuario*/
 .inputPass{
-    margin-bottom:30px;
+    background: var(--background-input);
+    color: var(--color-text-form-in);
+    margin-bottom:15px;
     text-align: left;
     padding:10px;
     margin-left:10px;
+}
+
+.inputPass::placeholder{
+    color:var(--color-text-form-in);
 }
 
 
