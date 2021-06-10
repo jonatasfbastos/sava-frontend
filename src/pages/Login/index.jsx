@@ -30,7 +30,7 @@ export default class LoginPages extends Component{
                             <InputPass />
                         </div>
                         <div className="input-fields">
-                            <a className="App-lostPass" href="#">Esque&ccedil;eu a senha?</a>
+                            <a className="App-lostPass" href="#">Esqueceu a senha?</a>
                             <Button/>
                         </div>
                         </form>
