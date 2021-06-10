@@ -29,9 +29,15 @@ export default class LoginPages extends Component{
                         <InputUser />
                         <InputPass />
                         <Button />
+                        <br/>
                         <Link to="/recuperar-senha" className="App-link">Esqueçeu a senha?</Link>
                         </form>
                 </header>
+
+                <footer>
+                    <h5 className="App-subtitle">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
+                    
+                </footer>
             </div>
         );
     }
