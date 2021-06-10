@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import { 
-  BrowserRouter,
-  Route,
-}from 'react-router-dom';
-import App from "./App";
-import login from "./pages/Login/login";
-
-
-=======
 import { BrowserRouter, Route } from 'react-router-dom';
 import Login from './pages/Login/index';
 import logo from "./logo.svg";
@@ -48,16 +38,18 @@ function Routes() {
       <Route path="/recuperar-senha">
         <div><h2>Recuperação de senha</h2></div>
       </Route>
->>>>>>> eccc712f4e7cf254e5b3975dbc9358a8bb2d270f
+    </BrowserRouter>
+  )
+}
 
-function Routes(){
+{/* function Routes(){
   return(
     <BrowserRouter>
       <Route path="/" exact component={App} />
       <Route path="/login" component={login} />
     </BrowserRouter>
-  );
-}
+  ); */}
+
 
 export default Routes;
 
