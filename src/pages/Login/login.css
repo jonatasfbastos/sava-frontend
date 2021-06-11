@@ -13,10 +13,7 @@
   position: relative;
   top:25px;
   left:2px;
-<<<<<<< HEAD
   color:#484761;
-=======
->>>>>>> 00ed7e35844bdda689febc0cb53099c94ef2d4cf
 }
   
 .App {
@@ -56,10 +53,7 @@
     color: var(--color-text-form-out);
     text-decoration: none;
     padding:10px;
-<<<<<<< HEAD
     font-size:16px;
-=======
->>>>>>> 00ed7e35844bdda689febc0cb53099c94ef2d4cf
   }
 
   .App-link:focus{
@@ -140,6 +134,10 @@
           width:10%;
       }
   }
+
+
+
+
 
 
 
