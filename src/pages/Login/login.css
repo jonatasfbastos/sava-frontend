@@ -13,6 +13,10 @@
   position: relative;
   top:25px;
   left:2px;
+<<<<<<< HEAD
+  color:#484761;
+=======
+>>>>>>> 00ed7e35844bdda689febc0cb53099c94ef2d4cf
 }
   
 .App {
@@ -20,7 +24,7 @@
   }
   
   .App-icone {
-    height: 15vmin;
+    height: 20vmin;
     pointer-events: none;
     padding:10px;
   }
@@ -52,6 +56,10 @@
     color: var(--color-text-form-out);
     text-decoration: none;
     padding:10px;
+<<<<<<< HEAD
+    font-size:16px;
+=======
+>>>>>>> 00ed7e35844bdda689febc0cb53099c94ef2d4cf
   }
 
   .App-link:focus{
@@ -72,6 +80,17 @@
       position:relative;
       left:25px;
   }
+
+  .App-subtitle{
+    color:var(--color-text-form-out);
+      text-align:center;
+      font-size:0.9rem;
+  }
+
+  .App-twitter-icon{
+    padding-left:10px;
+  }
+  
 
   .App-label{
       position: relative;
@@ -121,5 +140,7 @@
           width:10%;
       }
   }
+
+
 
 
