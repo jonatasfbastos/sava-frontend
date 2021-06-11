@@ -13,6 +13,7 @@
   position: relative;
   top:25px;
   left:2px;
+  color:#484761;
 }
   
 .App {
@@ -20,7 +21,7 @@
   }
   
   .App-icone {
-    height: 15vmin;
+    height: 20vmin;
     pointer-events: none;
     padding:10px;
   }
@@ -52,6 +53,7 @@
     color: var(--color-text-form-out);
     text-decoration: none;
     padding:10px;
+    font-size:16px;
   }
 
   .App-link:focus{
@@ -71,6 +73,16 @@
       font-size:1.3rem;
       position:relative;
       left:25px;
+  }
+
+  .App-subtitle{
+    color:var(--color-text-form-out);
+      text-align:center;
+      font-size:0.9rem;
+  }
+
+  .App-twitter-icon{
+    padding-left:10px;
   }
 
   .App-label{

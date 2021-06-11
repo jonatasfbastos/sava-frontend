@@ -17,11 +17,11 @@
     --background-button-focus-middle: #545454;
     --background-button-focus-right: #565656;
 
-    --background-form: #dbd9ee;
+    --background-form: #DAD9ED;
     --background: #f3f3fa;
     --font-default-weight: 700;
     --background-input: #474761;
-    --color-text-form-out: #474761;
+    --color-text-form-out: #65656F;
     --color-text-form-out-focus: #474861;
-    --color-text-form-in: #f3f3fa;
+    --color-text-form-in: #FFFFFF;
 }
