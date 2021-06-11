@@ -1,6 +1,7 @@
 import { BrowserRouter, Route } from 'react-router-dom';
 import Login from './pages/Login/index';
 import Home from './pages/Home/index'
+import Recovery from './pages/PassowordRecovery/index';
 
 // import logo from "./logo.svg";
 
@@ -31,6 +32,11 @@ function Routes() {
         </div>
       </Route> */}
 
+      {/* Rota para a home page */}
+      <Route exact path="/">
+        <Home />
+      </Route>
+
       {/* Rota para a tela de login */}
       <Route path="/login">
         <Login />
@@ -38,11 +44,7 @@ function Routes() {
 
       {/* Rota para a tela de recuperação de senha */}
       <Route path="/recuperar-senha">
-        <div><h2>Recuperação de senha</h2></div>
-      </Route>
-
-      <Route path="/">
-        <Home />
+        <Recovery />
       </Route>
 
     </BrowserRouter>
