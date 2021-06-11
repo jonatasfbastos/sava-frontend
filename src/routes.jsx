@@ -1,6 +1,8 @@
 import { BrowserRouter, Route } from 'react-router-dom';
 import Login from './pages/Login/index';
-import logo from "./logo.svg";
+import Home from './pages/Home/index'
+
+// import logo from "./logo.svg";
 
 
 function Routes() {
@@ -10,7 +12,7 @@ function Routes() {
     {/* Aqui ficará as rotas para cada page,
     mas por enquanto coloquei isso ai só pra exibir algo*/}
 
-      <Route exact path="/">
+      {/* <Route exact path="/">
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -27,7 +29,7 @@ function Routes() {
             </a>
           </header>
         </div>
-      </Route>
+      </Route> */}
 
       {/* Rota para a tela de login */}
       <Route path="/login">
@@ -38,18 +40,14 @@ function Routes() {
       <Route path="/recuperar-senha">
         <div><h2>Recuperação de senha</h2></div>
       </Route>
+
+      <Route path="/">
+        <Home />
+      </Route>
+
     </BrowserRouter>
   )
 }
-
-{/* function Routes(){
-  return(
-    <BrowserRouter>
-      <Route path="/" exact component={App} />
-      <Route path="/login" component={login} />
-    </BrowserRouter>
-  ); */}
-
 
 export default Routes;
 
