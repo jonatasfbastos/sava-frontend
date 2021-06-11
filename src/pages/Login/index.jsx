@@ -5,11 +5,16 @@ import InputUser from '../../components/InputComponent/inputUsername';
 import InputPass from '../../components/InputComponent/inputPassword';
 import Button from '../../components/buttons/button';
 
+<<<<<<< HEAD
 import logo from '../../icon/logotipo.svg';
 import lock from '../../icon/lock-icon.svg';
 import IconFacebook from '../../icon/facebook';
 import IconTwitter from '../../icon/twitter';
 import IconIfba from '../../icon/ifba';
+=======
+import logo from '../../ifba.svg';
+import lock from '../../icon/lock-icon.svg';
+>>>>>>> 00ed7e35844bdda689febc0cb53099c94ef2d4cf
 
 import './login.css';
 import Twitter from '../../icon/twitter';
@@ -38,15 +43,22 @@ export default class LoginPages extends Component{
                         </form>
                 </header>
 
+<<<<<<< HEAD
                 <footer className="App-footer">
                     <h5 className="App-subtitle">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
                     <IconFacebook className="App-facebook icon"/>
                     <Twitter className="App-twitter icon"/>
                     <IconIfba className="App-ifba icon" />
+=======
+                <footer>
+                    <h5 className="App-subtitle">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
+                    
+>>>>>>> 00ed7e35844bdda689febc0cb53099c94ef2d4cf
                 </footer>
             </div>
         );
     }
 
 }
+
 
