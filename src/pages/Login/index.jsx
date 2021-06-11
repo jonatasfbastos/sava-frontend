@@ -5,10 +5,15 @@ import InputUser from '../../components/InputComponent/inputUsername';
 import InputPass from '../../components/InputComponent/inputPassword';
 import Button from '../../components/buttons/button';
 
-import logo from '../../ifba.svg';
+import logo from '../../icon/logotipo.svg';
 import lock from '../../icon/lock-icon.svg';
+import IconFacebook from '../../icon/facebook';
+import IconTwitter from '../../icon/twitter';
+import IconIfba from '../../icon/ifba';
+
 
 import './login.css';
+import Twitter from '../../icon/twitter';
 
 const login = 'Login';
 
@@ -33,15 +38,18 @@ export default class LoginPages extends Component{
                         <Link to="/recuperar-senha" className="App-link">Esqueçeu a senha?</Link>
                         </form>
                 </header>
-
-                <footer>
+                <footer className="App-footer">
                     <h5 className="App-subtitle">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
-                    
+                    <IconFacebook className="App-facebook icon"/>
+                    <Twitter className="App-twitter icon"/>
+                    <IconIfba className="App-ifba icon" />
+
                 </footer>
             </div>
         );
     }
 
 }
+
 
 
