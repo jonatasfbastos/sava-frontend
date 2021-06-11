@@ -3,12 +3,8 @@
 
 :root{
     --radius:5px;
-
-<<<<<<< HEAD
     --color-button: #000000; /**/
-=======
-    --color-button: #000000; /*para não dar conflito.*/
->>>>>>> 00ed7e35844bdda689febc0cb53099c94ef2d4cf
+
     
     /*gradient button*/
     --background-button-left: #313033;
@@ -21,16 +17,7 @@
     --background-button-focus-middle: #545454;
     --background-button-focus-right: #565656;
 
-<<<<<<< HEAD
-    --background-form: #DAD9ED;
-    --background: #f3f3fa;
-    --font-default-weight: 700;
-    --background-input: #474761;
-    --color-text-form-out: #65656F;
-    --color-text-form-out-focus: #474861;
-    --color-text-form-in: #FFFFFF;
-}
-=======
+
     /* form background*/
     --background-form: #dbd9ee;
     /*background view*/
@@ -46,4 +33,4 @@
     /*color text form in */
     --color-text-form-in: #f3f3fa;
 }
->>>>>>> 00ed7e35844bdda689febc0cb53099c94ef2d4cf
+
