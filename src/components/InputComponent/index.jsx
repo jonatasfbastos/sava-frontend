@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './inputs.css';
+import './style.css';
 
 // const tag_username = 'Usuário:';
 

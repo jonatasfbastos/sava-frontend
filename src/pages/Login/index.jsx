@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-import InputUser from '../../components/InputComponent/InputComponent';
-import InputPass from '../../components/InputComponent/inputPassword';
+import InputUser from '../../components/InputComponent';
 import Button from '../../components/buttons/button';
 
 import logo from '../../icon/logotipo.svg';
