@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-import InputUser from '../../components/InputComponent/inputUsername';
+import InputUser from '../../components/InputComponent/InputComponent';
 import InputPass from '../../components/InputComponent/inputPassword';
 import Button from '../../components/buttons/button';
 
@@ -31,8 +31,17 @@ export default class LoginPages extends Component{
                             </svg>
                             <h5 className="App-title">{login}</h5>
                         </div>
-                        <InputUser />
-                        <InputPass />
+                        <InputUser
+                            name="login"
+                            type="text"
+                            placeholder="Login:"
+                        />
+
+                        <InputUser
+                            name="password"
+                            type="password"
+                            placeholder="Senha:"
+                        />
                         <Button />
                         <br/>
                         <Link to="/recuperar-senha" className="App-link">Esqueçeu a senha?</Link>
