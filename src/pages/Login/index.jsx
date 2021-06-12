@@ -41,7 +41,11 @@ export default class LoginPages extends Component{
                             type="password"
                             placeholder="Senha:"
                         />
-                        <Button />
+                        
+                        <Button 
+                            name="Acessar"
+                            type="submit"
+                        />
                         <br/>
                         <Link to="/recuperar-senha" className="App-link">Esqueçeu a senha?</Link>
                         </form>
