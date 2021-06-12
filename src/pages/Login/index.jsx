@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
 import InputUser from '../../components/InputComponent';
-import Button from '../../components/buttons/button';
+import Button from '../../components/buttons';
 
 import logo from '../../icon/logotipo.svg';
 import lock from '../../icon/lock-icon.svg';

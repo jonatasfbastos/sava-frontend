@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 
-import './buttons.css';
+import './style.css';
 
 const tag_login = 'Logar';
 
