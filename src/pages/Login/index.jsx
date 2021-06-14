@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import InputUser from '../../components/InputComponent';
 import Button from '../../components/buttons';
 
-import logo from '../../icon/logotipo.svg';
+import logo from '../../icon/logotipo_sava.svg';
 import lock from '../../icon/lock-icon.svg';
 import IconFacebook from '../../icon/facebook';
 import IconTwitter from '../../icon/twitter';
