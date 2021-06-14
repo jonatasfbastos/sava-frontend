@@ -2,6 +2,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Login from './pages/Login/index';
 import Home from './pages/Home/index'
 import Recovery from './pages/PassowordRecovery/index';
+import Register from './pages/register/register';
 
 // import logo from "./logo.svg";
 
@@ -47,9 +48,14 @@ function Routes() {
         <Recovery />
       </Route>
 
+      <Route path="/register">
+        <Register />
+      </Route>
+
     </BrowserRouter>
   )
 }
 
 export default Routes;
+
 
