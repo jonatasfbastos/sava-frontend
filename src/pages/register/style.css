@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/*Icon lock (icone do cadeado no formulário)*/
 .lock-icon{
   height: 3vmin;
   position: relative;
@@ -20,6 +21,7 @@
     /*text-align: center;*/
   }
   
+/*icone da aplicação | application icon*/
   .App-icone {
     height: 20vmin;
     pointer-events: none;
@@ -38,6 +40,7 @@
     color: black;
   }
 
+    /*line down of title and icon lock.*/
   .App-line{
     display:block;
     text-align: left;
@@ -49,18 +52,20 @@
 
   }
   
+    /*link recover account*/
   .App-link {
     color: var(--color-text-form-out);
     text-decoration: none;
     padding:10px;
     font-size:16px;
   }
-
+    /*link recover account  when clicked*/
   .App-link:focus{
     color: var(--color-text-form-out-focus);
     text-decoration: none;
   }
-
+   
+    /*form*/
   .App-form{
       background: var(--background-form);
       border-radius:var(--radius);
@@ -78,6 +83,7 @@
       font-size:0.9rem;
   }
 
+    
   .App-twitter-icon{
     padding-left:10px;
   }
@@ -94,7 +100,7 @@
   }
 
 
-  @media (max-width:599px){
+  @media (max-width:599px){ //device mobile
     
     .lock-icon{
         height:6vmin;
@@ -125,7 +131,7 @@
       }
   }
 
-  @media (max-width:600px){
+  @media (max-width:600px){ //device mobile and tablet
     .lock-icon{
       height:6vmin;
     }
@@ -142,7 +148,7 @@
     }
   }
 
-  @media(min-width:900px){
+  @media(min-width:900px){ //device desktop ldip
     .App-form{
         width:35%;
         padding:10px;
@@ -157,7 +163,7 @@
     }
   }
 
-  @media (min-width:1200px){
+  @media (min-width:1200px){ //device desktop hdip
       .App-form{
           width:30%;
       }
