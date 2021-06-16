@@ -2,7 +2,10 @@
 /*valores padroões*/
 
 :root{
+    
+    /*border bend*/
     --radius:5px;
+    /*cor do botões*/
     --color-button: #000000; /**/
 
     
