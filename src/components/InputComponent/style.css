@@ -1,7 +1,7 @@
 
 @import url("../../styles/global.css");
 
-input{
+input{ //This is from all components input type
     border-radius:5px;
     height:40px;
     outline: none;
@@ -9,8 +9,8 @@ input{
     text-align:left;
 }
 
-/*input do senha*/
-.inputUser{
+/*input do usuário*/
+.inputUser{ 
     background: var(--background-input);
     color: var(--color-text-form-in);
     text-align:left;
@@ -18,11 +18,12 @@ input{
     margin-left:10px;
 }
 
+/*input user placeholder*/
 .inputUser::placeholder{
     color:var(--color-text-form-in);
 }
 
-/*input do usuario*/
+/*input password*/
 .inputPass{
     background: var(--background-input);
     color: var(--color-text-form-in);
@@ -38,7 +39,7 @@ input{
 
 
 
-@media (max-width:599px){
+@media (max-width:599px){ //device mobile
     input{
         border-radius:5px;
         height:40px;
@@ -61,7 +62,7 @@ input{
     }
 }
 
-@media (min-width:600px){
+@media (min-width:600px){ //device mobile and tablet
     input{
         border-radius:5px;
         height:35px;
@@ -81,7 +82,7 @@ input{
     }
 }
 
-@media(min-width:900px){
+@media(min-width:900px){ //device desktop ldip
     input{
         border-radius:5px;
         height:35px;
@@ -101,7 +102,7 @@ input{
     }
 }
 
-@media(min-width:1200px){
+@media(min-width:1200px){ //device desktop hdip
     input{
         border-radius:5px;
         height:35px;
