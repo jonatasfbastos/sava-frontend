@@ -1,7 +1,8 @@
 
 @import url("../../styles/global.css");
 
-input{ //This is from all components input type
+/* This is from all components input type */
+input{ 
     border-radius:5px;
     height:40px;
     outline: none;
@@ -38,8 +39,8 @@ input{ //This is from all components input type
 }
 
 
-
-@media (max-width:599px){ //device mobile
+/* device mobile */
+@media (max-width:599px){
     input{
         border-radius:5px;
         height:40px;
@@ -62,7 +63,8 @@ input{ //This is from all components input type
     }
 }
 
-@media (min-width:600px){ //device mobile and tablet
+/* device mobile and tablet */
+@media (min-width:600px){
     input{
         border-radius:5px;
         height:35px;
@@ -82,7 +84,8 @@ input{ //This is from all components input type
     }
 }
 
-@media(min-width:900px){ //device desktop ldip
+/* device desktop ldip */
+@media(min-width:900px){
     input{
         border-radius:5px;
         height:35px;
@@ -102,7 +105,8 @@ input{ //This is from all components input type
     }
 }
 
-@media(min-width:1200px){ //device desktop hdip
+/* device desktop hdip */
+@media(min-width:1200px){
     input{
         border-radius:5px;
         height:35px;
