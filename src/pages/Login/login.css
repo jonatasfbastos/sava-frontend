@@ -8,22 +8,33 @@
     box-sizing: border-box;
 }
 
-.lock-icon{
-  position: relative;
-  left:2px;
-  /*color:#484761;*/
-  color: red;
-}
+/*Icon lock (icone do cadeado no formulário)*/
 
-.App-icone{
-  top:25px;
+/*
+.lock-icon{
+  height: 3vmin;
+  position:relative;
+  top:20px;
+  left:2px;
+  color:#25243f;
 }
-  
+  */
+
+.lock-icon{
+  color: #25243f;
+}
 .App {
     /*text-align: center;*/
   }
   
+/*icone da aplicação | application icon*/
 
+  .App-icone {
+    height: 20vmin;
+    pointer-events: none;
+    padding:10px;
+  }
+  
   
   .App-header {
     background-color: var(--background);
@@ -36,13 +47,8 @@
     color: black;
   }
 
-  .App-line{
-    width: 85%;
-    text-align: center;
-    border: 1px solid red;
-  }
+    /*line down of title and icon lock.*/
 
-  /*
   .App-line{
     display:block;
     text-align: left;
@@ -51,9 +57,10 @@
     width:75%;
     margin-left:auto;
     margin-right:auto;
+
   }
-  */
   
+    /*link recover account*/
   .App-link {
     color: var(--color-text-form-out);
     text-decoration: none;
@@ -66,32 +73,26 @@
     text-decoration: none;
   }
 
+    /*form*/
+
   .App-form{
       background: var(--background-form);
       border-radius:var(--radius);
       box-shadow: 0px 0px 10px #565656;
   }
 
-  /*
   .App-title{
       color:var(--color-text-form-out);
       text-align:left;
-      font-size:1.3rem;
       position:relative;
-      left:25px;
-  }*/
-
-  .App-title{
-    color: var(--color-text-form-out);
-    text-align: center;
-    font-size: 1.3rem;
   }
 
   .App-subtitle{
     color:var(--color-text-form-out);
-    text-align:center;
-    font-size:0.9rem;
+      text-align:center;
+      font-size:0.9rem;
   }
+
 
   .App-twitter-icon{
     padding-left:10px;
@@ -107,97 +108,117 @@
       text-decoration:none;
       padding:10px;
   }
-  
+
 
   @media (max-width:599px){
 
-    /*
+    
+    /*icone do cadeado*/
+    .lock-icon{
+      height:4vmin;
+      position: relative;
+      top:15px;
+    }
+    
+    /*titulo ao lado do icone cadeado*/
+    .App-title{
+      position: relative;
+      left:28px;
+      font-size:.8rem;
+      top:-5px;
+    }
+
+
     .App-header{
       min-height: 75vh;
+      font-size:.8rem;
     }
     .App-icone {
         height: 30vmin;
         pointer-events:stroke;
       }
-    */
+      
 
-    .App-icone{
-      width:30%;
-    }
-
-
-      .lock-icon{
-        height:4vmin;
+        .App-form{
+          padding:10px;
+          width:92%;
       }
-
-      .App-form{
-        width:95%;
-        padding:10px;
-      }
-  
-      h5.App-title{
-        text-align: left;
-        position: relative;
-        left:calc(18% / 2);
-      }
-     
   }
 
-  @media (max-width:600px){
-
-    .App-icone{
-      width:45%;
-    }
-
-    .lock-icon{
-      height:6vmin;
-    }
-    .App-form{
-      width:85%;
-      padding:10px;
-    }
-
-    h5.App-title{
-      text-align: left;
+  @media (min-width:600px){
+     /*icone do cadeado*/
+     .lock-icon{
+      height:4vmin;
       position: relative;
-      left:calc(18% / 2);
+      top:15px;
+    }
+    
+    /*titulo ao lado do icone cadeado*/
+    .App-title{
+      position: relative;
+      left:30px;
+      font-size:.9rem;
+      top:-10px;
     }
 
+    .App-form{
+        width:75%;
+        padding:10px;
+    }
+
+    
   }
 
   @media(min-width:900px){
-
-    .App-icon{
-      width:45%;
+    
+     /*icone do cadeado*/
+     .lock-icon{
+      height:3vmin;
+      position: relative;
+      top:20px;
+    }
+    
+    /*titulo ao lado do icone cadeado*/
+    .App-title{
+      position: relative;
+      left:28px;
+      font-size:.8rem;
+      top:-4px;
     }
 
-    .lock-icon{
-      height:4vmin;
-      width:25px;
-    }
 
     .App-form{
         width:35%;
         padding:10px;
     }
-    h5.App-title{
-      text-align: left;
-      position: relative;
-    }
+
+
   }
 
   @media (min-width:1200px){
     
+    .lock-icon{
+        height:4vmin;
+    }
 
     .App-form{
+
           width:30%;
-      }
-      h5.App-title{
-      text-align: left;
-      position: relative;
-      left:35px;
     }
+
+      .App-title{
+          position:relative;
+          left:35px;
+          bottom: 10px;
+          font-size:.9rem;
+
+      }
   }
+
+
+
+
+
 
 
 
