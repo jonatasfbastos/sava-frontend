@@ -68,4 +68,3 @@ export default class RegisterPages extends Component{
 
 
 
-
