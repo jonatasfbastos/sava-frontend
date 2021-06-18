@@ -46,8 +46,12 @@
     color: #fff;
 }
 
+<<<<<<< HEAD
 /* device mobile*/
 @media (max-width:599px){ 
+=======
+@media (max-width:599px){ //device mobile
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
     .button{
         font-weight:700;
         text-align:center;
@@ -56,8 +60,12 @@
         padding:10px;
     }
 }
+<<<<<<< HEAD
 /* device tablet */
 @media (min-width:600px){ 
+=======
+@media (min-width:600px){ //device mobile | tablet
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
     .button{
         font-weight:700;
         text-align:center;
@@ -66,8 +74,12 @@
         padding:10px;
     }
 }
+<<<<<<< HEAD
 /*device desktop ldip*/
 @media (min-width:900px){
+=======
+@media (min-width:900px){ //device desktop LDIP
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
     .button{
         font-weight:700;
         text-align:center;
@@ -76,8 +88,12 @@
         padding:10px;
     }
 }
+<<<<<<< HEAD
 /*device desktop hdip*/
 @media (min-width:1200px){
+=======
+@media (min-width:1200px){ //device desktop HDIP
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
     .button{
         font-weight:700;
         text-align:center;

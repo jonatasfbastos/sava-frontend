@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+/*Icon lock (icone do cadeado no formulário)*/
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
 .lock-icon{
   height: 3vmin;
   position: relative;
@@ -20,6 +24,10 @@
     /*text-align: center;*/
   }
   
+<<<<<<< HEAD
+=======
+/*icone da aplicação | application icon*/
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
   .App-icone {
     height: 20vmin;
     pointer-events: none;
@@ -38,6 +46,10 @@
     color: black;
   }
 
+<<<<<<< HEAD
+=======
+    /*line down of title and icon lock.*/
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
   .App-line{
     display:block;
     text-align: left;
@@ -49,18 +61,31 @@
 
   }
   
+<<<<<<< HEAD
+=======
+    /*link recover account*/
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
   .App-link {
     color: var(--color-text-form-out);
     text-decoration: none;
     padding:10px;
     font-size:16px;
   }
+<<<<<<< HEAD
 
+=======
+    /*link recover account  when clicked*/
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
   .App-link:focus{
     color: var(--color-text-form-out-focus);
     text-decoration: none;
   }
+<<<<<<< HEAD
 
+=======
+   
+    /*form*/
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
   .App-form{
       background: var(--background-form);
       border-radius:var(--radius);
@@ -78,6 +103,10 @@
       font-size:0.9rem;
   }
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
   .App-twitter-icon{
     padding-left:10px;
   }
@@ -94,7 +123,11 @@
   }
 
 
+<<<<<<< HEAD
   @media (max-width:599px){
+=======
+  @media (max-width:599px){ //device mobile
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
     
     .lock-icon{
         height:6vmin;
@@ -109,9 +142,14 @@
 
     .App-title{
         position: relative;
+<<<<<<< HEAD
         left:12px;
         font-size:0.8rem;
         bottom:5px;
+=======
+        left:15px;
+        font-size:1.2rem;
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
     }
 
     .App-icone {
@@ -126,6 +164,7 @@
       }
   }
 
+<<<<<<< HEAD
   @media (min-width:600px){
     .lock-icon{
         height:4vmin;
@@ -150,6 +189,26 @@
         height:4vmin;
       }
 
+=======
+  @media (max-width:600px){ //device mobile and tablet
+    .lock-icon{
+      height:6vmin;
+    }
+    .App-form{
+      width:85%;
+      padding:10px;
+    }
+
+    .App-title{
+        position:relative;
+        font-size: 0.8rem;
+        font-weight: 700;
+        bottom:5px;
+    }
+  }
+
+  @media(min-width:900px){ //device desktop ldip
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
     .App-form{
         width:35%;
         padding:10px;
@@ -164,6 +223,7 @@
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:1200px){
     
     .lock-icon{
@@ -171,14 +231,23 @@
     }
 
         .App-form{
+=======
+  @media (min-width:1200px){ //device desktop hdip
+      .App-form{
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
           width:30%;
       }
 
       .App-title{
           position:relative;
+<<<<<<< HEAD
           left:35px;
           bottom: 10px;
           font-size:.9rem;
+=======
+          left:30px;
+          bottom: 10px;
+>>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
       }
   }
 
