@@ -10,14 +10,9 @@ input{
     text-align:left;
 }
 
-<<<<<<< HEAD
 /*input do senha*/
 .inputUser{
     display: block;
-=======
-/*input do usuário*/
-.inputUser{ 
->>>>>>> 692630489e6fad62fee37a2b86503327ea598b76
     background: var(--background-input);
     color: var(--color-text-form-in);
     text-align:left;
