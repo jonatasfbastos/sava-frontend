@@ -8,218 +8,110 @@
     box-sizing: border-box;
 }
 
-/*Icon lock (icone do cadeado no formulário)*/
-
-/*
-.lock-icon{
-  height: 3vmin;
-  position:relative;
-  top:20px;
-  left:2px;
-  color:#25243f;
+/*tela principal*/
+.AppRoot{
+    background: var(--background);
+    width:100vw;
+    height:100vh;
 }
-  */
 
-.lock-icon{
-  color: #25243f;
-}
-.App {
-    /*text-align: center;*/
-  }
-  
-/*icone da aplicação | application icon*/
-
-  .App-icone {
-    height: 20vmin;
-    pointer-events: none;
+/*tela do aplicativo - configurações primordiais*/
+.App{
+    background: var(--background-form);
+    border:1px solid transparent;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px 4px gray;
+    color:var(--color-text-form-out);
     padding:10px;
-  }
-  
-  
-  .App-header {
-    background-color: var(--background);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: black;
-  }
+}
 
-    /*line down of title and icon lock.*/
+.App-link{
+    font-weight: 700;
+}
 
-  .App-line{
-    display:block;
-    text-align: left;
-    border:none;
+
+.linha{
+    border:transparent;
     border-bottom: 1px solid black;
-    width:75%;
+    display:flex;
+    flex-direction: row;
     margin-left:auto;
     margin-right:auto;
+    width:75%;
+}
 
-  }
-  
-    /*link recover account*/
-  .App-link {
-    color: var(--color-text-form-out);
-    text-decoration: none;
-    padding:10px;
-    font-size:16px;
-  }
-
-  .App-link:focus{
-    color: var(--color-text-form-out-focus);
-    text-decoration: none;
-  }
-
-    /*form*/
-
-  .App-form{
-      background: var(--background-form);
-      border-radius:var(--radius);
-      box-shadow: 0px 0px 10px #565656;
-  }
-
-  .App-title{
-      color:var(--color-text-form-out);
-      text-align:left;
-      position:relative;
-  }
-
-  .App-subtitle{
+/*rodape da aplicação*/
+.rodape{
+    background: transparent;
+    border:1px solid transparent;
     color:var(--color-text-form-out);
-      text-align:center;
-      font-size:0.9rem;
-  }
+    padding:10px;
+    text-align: center;
+}
+
+.rodape_titulo{
+    font-weight: 700;
+}
+
+/*icones da rede sociais abaixo do copyright*/
+.linha_rodape{
+    display:flex;
+    flex-direction: row;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
 
 
-  .App-twitter-icon{
-    padding-left:10px;
-  }
-  
-
-  .App-label{
-      position: relative;
-      right:95px;
-  }
-
-  .App-lostPass{
-      text-decoration:none;
-      padding:10px;
-  }
 
 
-  @media (max-width:599px){
-
-    
-    /*icone do cadeado*/
-    .lock-icon{
-      height:4vmin;
-      position: relative;
-      top:15px;
-    }
-    
-    /*titulo ao lado do icone cadeado*/
-    .App-title{
-      position: relative;
-      left:28px;
-      font-size:.8rem;
-      top:-5px;
+/* dispositivo celulares pequenos*/
+@media (max-width:599px){
+    /*Tela do formulário*/
+    .App{
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
+        width:95%;
     }
 
+}
 
-    .App-header{
-      min-height: 75vh;
-      font-size:.8rem;
+/* dispositivo celulares grande e tablets*/
+@media (min-width:600px){ 
+    /*Tela do formulário*/
+    .App{
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
+        width:95%;
     }
-    .App-icone {
-        height: 30vmin;
-        pointer-events:stroke;
-      }
-      
+}
 
-        .App-form{
-          padding:10px;
-          width:92%;
-      }
-  }
-
-  @media (min-width:600px){
-     /*icone do cadeado*/
-     .lock-icon{
-      height:4vmin;
-      position: relative;
-      top:15px;
-    }
-    
-    /*titulo ao lado do icone cadeado*/
-    .App-title{
-      position: relative;
-      left:30px;
-      font-size:.9rem;
-      top:-10px;
-    }
-
-    .App-form{
-        width:75%;
-        padding:10px;
-    }
-
-    
-  }
-
-  @media(min-width:900px){
-    
-     /*icone do cadeado*/
-     .lock-icon{
-      height:3vmin;
-      position: relative;
-      top:20px;
-    }
-    
-    /*titulo ao lado do icone cadeado*/
-    .App-title{
-      position: relative;
-      left:28px;
-      font-size:.8rem;
-      top:-4px;
-    }
-
-
-    .App-form{
+/*desktop com resolução de tela  baixa*/
+@media (min-width:900px){
+    /*Tela do formulário*/
+    .App{
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
         width:35%;
-        padding:10px;
     }
+}
 
-
-  }
-
-  @media (min-width:1200px){
-    
-    .lock-icon{
-        height:4vmin;
+/*resolucão de tela de desktop com alta-resolucação*/
+@media (min-width:1200px){
+    /*Tela do formulário*/
+    .App{
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
+        width:25%;
     }
-
-    .App-form{
-
-          width:30%;
-    }
-
-      .App-title{
-          position:relative;
-          left:35px;
-          bottom: 10px;
-          font-size:.9rem;
-
-      }
-  }
-
-
-
-
-
-
+}
 
 
 
