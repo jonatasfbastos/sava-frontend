@@ -2,6 +2,12 @@
 /*valores padroões*/
 
 :root{
+
+    /* Paleta de cores */
+    --primary-color: #dad9ed;
+    --secondary-colo: #484761;
+    --dark-gray: #65656f;
+    --light-gray: #8d8d8e;
     
     /*border bend*/
     --radius:5px;
