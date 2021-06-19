@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import './login.css';
 
-import Logotipo from '../../icon/logotipo_sava.svg';
+import Logotipo from '../../icon/logotipo.svg';
 
 import Input from '../../components/InputComponent';
 import Button from '../../components/buttons';
