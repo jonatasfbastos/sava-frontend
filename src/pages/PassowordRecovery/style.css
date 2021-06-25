@@ -1,65 +1,84 @@
 :root {
   --cinza: #E5E5E5;
+  --branco: #ffffff;
+  --azul: #484761;
+  --azul-e: #65656F;
+  --dark: #313134;
 }
 
-.bg-color-recupere {
-  background: var(--cinza);
+.fundo-form {
   height: 679px;
   width: 845px;
   left: 297px;
   top: 102px;
   border-radius: 15px;
-  margin-left: 297px;
-  margin-right: 298px;
+  background: var(--cinza);
   margin-top: 102px;
-  margin-bottom: 142px;
-}
-
-.logo-sava {
-  height: 200px;
-  width: 360px;
-  left: 540px;
-  top: 70px;
-  border-radius: 0px;
+  margin-bottom: 147px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.sava {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.login-input {
+.login-entrada {
   height: 59px;
   width: 455px;
   left: 492px;
   top: 459px;
   border-radius: 15px;
+  background: var(--azul);
+  color: var(--branco);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.content {
+  width: 455px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-recupera {
+  border-bottom: 2px solid var(--dark);
+  margin-bottom: 100px;
+}
+
+.recupera-botao {
+  margin-top: 15px;
+  height: 59px;
+  width: 455px;
+  left: 492px;
+  top: 543px;
+  border: none;
+  border-radius: 15px;
+  background: var(--dark);
+  color: var(--branco);
+  font-size: 18px;
+}
+
+.center-block {
+  margin-top: 15px;
+  width: 45px;
+  display: block;
+  margin-left: 205px;
+  margin-right: 205px;
 }
 
 .link-voltar {
   text-decoration: none;
+  color: var(--azul-e);
 }
 
-.form-recupera {
-  margin-right: 195px;
-  margin-left: 195px;
+.social-m {
+  margin-bottom: 15px;
+  width: 100px;
   display: block;
-}
-
-/*generic class*/
-
-.center-block {
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  width: 200px;
 }
 
-.pad-top-50 {
-  padding: 50px;
+.centraliza {
+  margin-left: 100px;
 }
 
 /*@charset "UTF-8";
