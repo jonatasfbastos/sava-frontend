@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "Fulano",
+      "login": "123456",
+      "password": "112233",
+      "typeUser": "administrador"
+    },
+    {
+      "name": "Italo",
+      "login": "20182",
+      "password": "dipirona",
+      "typeUser": "aluno"
+    }
+  ]
+}
