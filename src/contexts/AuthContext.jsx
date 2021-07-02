@@ -1,8 +1,12 @@
 import { createContext, useState } from "react";
 import api from "../services/api";
 
+// cria e exporta o context
 export const AuthContext = createContext({});
 
+// cria e exporta o Context Provider
+// o Provider disponibiliza informações para os components
+// que estão dentro dele
 export function AuthContextProvider({children}) {
 
   const [user, setUser] = useState(null);
@@ -16,13 +20,14 @@ export function AuthContextProvider({children}) {
     });
 
     if(!response.data[0]) {
-      console.log(response.data);
       setUser(null);
       console.log("Error: Authentication failed");
-      return;
+      return false;
     }
     
     setUser(response.data[0]);
+
+    return true;
   }
 
   return (

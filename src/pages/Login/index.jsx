@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
+import {useAuth} from '../../hooks/useAuth';
 
 import './login.css';
 
@@ -15,11 +16,32 @@ import IconIfba from '../../icon/ifba';
 
 export default function LoginPages() {
     const [user, setUser] = useState({login: '', password: ''});
+    const history = useHistory();
+    const {signIn} = useAuth();
 
-    function handleSubmit(event) {
+    // Verifica e envia os dados para serem autenticados
+    async function handleSubmit(event) {
         event.preventDefault();
 
-        console.log(user);
+        const {login, password} = user;
+        
+        if(login.trim() === '') {
+            alert("Informe o Login");
+            return;
+        }
+
+        if(password.trim() === '') {
+            alert("Informe a Senha");
+            return;
+        }
+
+        if(!await signIn(login, password)) {
+            alert('Falha ao Logar');
+            setUser({login: '', password: ''});
+            return;
+        }
+
+        history.push('/');
     }
 
     // salva os dados dos inputs no state

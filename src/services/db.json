@@ -2,8 +2,8 @@
   "users": [
     {
       "name": "Fulano",
-      "login": "123456",
-      "password": "112233",
+      "login": "admin",
+      "password": "admin",
       "typeUser": "administrador"
     },
     {
