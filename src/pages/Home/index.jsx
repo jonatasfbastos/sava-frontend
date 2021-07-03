@@ -8,6 +8,8 @@ class Home extends React.Component  {
       <div className="home">
         <h1>Home page</h1>
         <Link to='/login'>Veja a tela de Login</Link>
+        <br />
+        <Link to='/class/new'>Nova turma</Link>
       </div>
     )
   }
