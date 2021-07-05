@@ -42,6 +42,7 @@
   color: var(--branco);
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 15px;
 }
 
 .content {
@@ -59,7 +60,6 @@
 }
 
 .recupera-botao {
-  margin-top: 15px;
   height: 59px;
   width: 455px;
   left: 492px;
@@ -95,6 +95,16 @@
 .centraliza {
   font-size: 14px;
   text-align: center;
+}
+
+/* generica */
+
+.marg-top-30 {
+  margin-top: 30px;
+}
+
+.marg-bottom-15 {
+  margin-bottom: 15px;
 }
 
 /*@charset "UTF-8";
