@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("../../styles/global.css");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*tela principal*/
+.AppRoot-curse{
+    background: transparent;
+    width:100vw;
+    height:100vh;
+}
+
+/*tela do aplicativo - configurações primordiais*/
+.App-curse{
+    background: transparent;
+    border:1px solid transparent;
+    border-radius:5px;
+    color:var(--color-text-form-out);
+    padding:10px;
+}
+
+.App-link-curse{
+    font-weight: 700;
+    color:var(--color-text-form-out);
+    text-decoration: none;
+}
+
+.App-link-curse:hover{
+    color: #242144;
+}
+
+/*linha*/
+.linha-curse{
+    border:transparent;
+    border-bottom: 1px solid black;
+    display:block;
+    width:95%;
+    margin-left:auto;
+    text-align:center;
+    margin-right: auto;
+}
+
+.linha-curse-titulo{
+    text-align:center;
+    border:none;
+}
+
+
+.App-curse-icone-close{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.App-curse-close
+{
+    background:#474761;
+    display:flex;
+    flex-direction: row-reverse;
+    padding:4px 6px;
+    font-weight: 500;
+    height: 28px;
+    width:20px;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    color:white;
+}
+
+/*rodape da aplicação*/
+.rodape-curse{
+    background: transparent;
+    border:1px solid transparent;
+    color:var(--color-text-form-out);
+    padding:10px;
+    text-align: center;
+}
+
+.rodape_titulo-curse{
+    font-weight: 700;
+}
+
+
+/* dispositivo celulares pequenos*/
+@media (max-width:599px){
+    /*Tela do formulário*/
+    .App-curse{
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
+        width:95%;
+    }
+
+
+}
+
+/* dispositivo celulares grande e tablets*/
+@media (min-width:600px){ 
+    /*Tela do formulário*/
+    .App-curse{
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
+        width:95%;
+    }
+
+
+}
+
+/*desktop com resolução de tela  baixa*/
+@media (min-width:900px){
+    /*Tela do formulário*/
+    .App-curse{
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
+        width:35%;
+    }
+}
+
+/*resolucão de tela de desktop com alta-resolucação*/
+@media (min-width:1200px){
+    /*Tela do formulário*/
+    .App-curse{
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
+        width:25%;
+    }
+}
