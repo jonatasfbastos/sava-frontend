@@ -5,6 +5,7 @@ import Home from './pages/Home/index'
 import Recovery from './pages/PassowordRecovery/index';
 import Register from './pages/register/register';
 import { NewClass } from './pages/NewClass';
+import RegistrarCurso from './pages/curseReg/curse';
 
 // import logo from "./logo.svg";
 
@@ -56,6 +57,8 @@ function Routes() {
         <PrivateRoute path="/register" component={Register}/>
 
         <PrivateRoute path="/class/new" component={NewClass}/>
+
+        <PrivateRoute path="/curses/new" component={RegistrarCurso}/>
       </Switch>
     </BrowserRouter>
   )
