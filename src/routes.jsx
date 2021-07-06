@@ -1,62 +1,61 @@
-import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
-import { useAuth } from './hooks/useAuth';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Login from './pages/Login/index';
 import Home from './pages/Home/index'
 import Recovery from './pages/PassowordRecovery/index';
 import Register from './pages/register/register';
-import { NewClass } from './pages/NewClass';
-
+import RegistrarCurso from './pages/curseReg/curse';
 // import logo from "./logo.svg";
-
-function PrivateRoute({component: Component, ...rest}) {
-  const {signed} = useAuth();
-
-  return (
-    <Route 
-      {...rest}
-      render={props => (
-        signed ? (
-          <Component {...props}/>
-        ):(
-          <Redirect
-            to={{
-              pathname: "/login",
-              state: {from: props.location}
-            }}
-          />
-        )
-      )}
-    />
-  );
-}
 
 
 function Routes() {
 
   return (
-
     <BrowserRouter >
-    {/* O Swith não deixa duas rotas serem exibidas ao mesmo tempo */}
-      <Switch>
-        {/* Aqui ficará as rotas para cada page,*/}
+    {/* Aqui ficará as rotas para cada page,
+    mas por enquanto coloquei isso ai só pra exibir algo*/}
 
-        {/* Rota para a home page */}
-        <PrivateRoute exact path="/" component={Home}/>
+      {/* <Route exact path="/">
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+          </header>
+        </div>
+      </Route> */}
 
-        {/* Rota para a tela de login */}
-        <Route path="/login">
-          <Login />
-        </Route>
+      {/* Rota para a home page */}
+      <Route exact path="/">
+        <Home />
+      </Route>
 
-        {/* Rota para a tela de recuperação de senha */}
-        <Route path="/recuperar-senha">
-          <Recovery />
-        </Route>
+      {/* Rota para a tela de login */}
+      <Route path="/login">
+        <Login />
+      </Route>
 
-        <PrivateRoute path="/register" component={Register}/>
+      {/* Rota para a tela de recuperação de senha */}
+      <Route path="/recuperar-senha">
+        <Recovery />
+      </Route>
 
-        <PrivateRoute path="/class/new" component={NewClass}/>
-      </Switch>
+      <Route path="/register">
+        <Register />
+      </Route>
+
+      <Route path="/registerCurse">
+        <RegistrarCurso />
+      </Route>
+
     </BrowserRouter>
   )
 }
