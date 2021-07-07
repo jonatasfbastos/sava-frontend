@@ -8,14 +8,14 @@
 }
 
 /*tela principal*/
-.AppRoot{
+.AppRoot-r1{
     background: var(--background);
     width:100vw;
     height:100vh;
 }
 
 /*tela do aplicativo - configurações primordiais*/
-.App{
+.App-r1{
     background: var(--background-form);
     border:1px solid transparent;
     border-radius:5px;
@@ -24,18 +24,23 @@
     padding:10px;
 }
 
-.App-link{
+.App-icone-r1{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+.App-link-r1{
+    display:block;
     font-weight: 700;
     color:var(--color-text-form-out);
     text-decoration: none;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-.App-link:hover{
-    color: #242144;
-}
 
-
-.linha{
+.linha-r1{
     border:transparent;
     border-bottom: 1px solid black;
     display:flex;
@@ -46,7 +51,7 @@
 }
 
 /*rodape da aplicação*/
-.rodape{
+.rodape-r1{
     background: transparent;
     border:1px solid transparent;
     color:var(--color-text-form-out);
@@ -54,12 +59,12 @@
     text-align: center;
 }
 
-.rodape_titulo{
+.rodape_titulo-r1{
     font-weight: 700;
 }
 
 /*icones da rede sociais abaixo do copyright*/
-.linha_rodape{
+.linha_rodape-r1{
     display:flex;
     flex-direction: row;
     margin-left:auto;
@@ -76,7 +81,7 @@
 /* dispositivo celulares pequenos*/
 @media (max-width:599px){
     /*Tela do formulário*/
-    .App{
+    .App-r1{
         margin-top:100px;
         margin-left:auto;
         margin-right:auto;
@@ -88,7 +93,7 @@
 /* dispositivo celulares grande e tablets*/
 @media (min-width:600px){ 
     /*Tela do formulário*/
-    .App{
+    .App-r1{
         margin-top:100px;
         margin-left:auto;
         margin-right:auto;
@@ -99,7 +104,7 @@
 /*desktop com resolução de tela  baixa*/
 @media (min-width:900px){
     /*Tela do formulário*/
-    .App{
+    .App-r1{
         margin-top:100px;
         margin-left:auto;
         margin-right:auto;
@@ -110,7 +115,7 @@
 /*resolucão de tela de desktop com alta-resolucação*/
 @media (min-width:1200px){
     /*Tela do formulário*/
-    .App{
+    .App-r1{
         margin-top:100px;
         margin-left:auto;
         margin-right:auto;
