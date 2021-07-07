@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Button from '../../components/buttons';
 import './style.css'
 import logo from '../../icon/logotipo_sava.svg';
 import IconLock from '../../icon/lock';
@@ -22,7 +23,7 @@ class PasswordRecovery extends React.Component {
                 <p>Recuperar Conta</p>
               </div>
               <input type="text" name="" id="" class="login-entrada" placeholder="Login:" />
-              <button class="recupera-botao">Enviar</button>
+              <Link to='/password/new'>Enviar</Link>
               <div class="center-block">
                 <Link to='/login' class='link-voltar'>Voltar</Link>
               </div>

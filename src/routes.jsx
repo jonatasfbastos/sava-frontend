@@ -2,7 +2,8 @@ import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import { useAuth } from './hooks/useAuth';
 import Login from './pages/Login/index';
 import Home from './pages/Home/index'
-import Recovery from './pages/PassowordRecovery/index';
+import PasswordRecovery from './pages/PasswordRecovery/index';
+import NewPassword from './pages/PasswordRecovery/newpassword';
 import Register from './pages/register/register';
 import { NewClass } from './pages/NewClass';
 import RegistrarCurso from './pages/curseReg/curse';
@@ -49,11 +50,11 @@ function Routes() {
           <Login />
         </Route>
 
-        {/* Rota para a tela de recuperação de senha */}
-        <Route path="/recuperar-senha">
-          <Recovery />
-        </Route>
+        {/* Rotas para a tela de recuperação de senha */}
+        <Route path="/password/recover" component={PasswordRecovery}/>
+        <Route path="/password/new" component={NewPassword}/>
 
+        {/* Rota para cadastrar tipo de usuário */}
         <PrivateRoute path="/register" component={Register}/>
 
         <PrivateRoute path="/class/new" component={NewClass}/>

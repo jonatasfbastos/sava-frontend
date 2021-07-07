@@ -78,7 +78,7 @@ export default function LoginPages() {
                     />
                      <Button type="submit" name="Enviar"/>
                      <br />              
-                     <Link to="/recuperar-senha" className="App-link-login">Recuperar Conta?</Link>
+                     <Link to="/password/recover" className="App-link-login">Recuperar Conta?</Link>
                  </form>
             </header>
             <footer className="rodape-login">
