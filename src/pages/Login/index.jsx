@@ -53,11 +53,11 @@ export default function LoginPages() {
     }
     
     return (
-        <div className="AppRoot">
-            <header className="App">
+        <div className="AppRoot-login">
+            <header className="App-login">
                  <form onSubmit={handleSubmit} >
-                     <img className="App-icone" src={Logotipo} alt=""/>
-                     <div className="linha">
+                     <img className="App-icone-l" src={Logotipo} alt=""/>
+                     <div className="linha-login    ">
                          <IconLock className="iconLock" />
                          <h5>Login</h5>
                      </div>
@@ -78,12 +78,12 @@ export default function LoginPages() {
                     />
                      <Button type="submit" name="Enviar"/>
                      <br />              
-                     <Link to="/recuperar-senha" className="App-link">Recuperar Conta?</Link>
+                     <Link to="/recuperar-senha" className="App-link-login">Recuperar Conta?</Link>
                  </form>
             </header>
-            <footer className="rodape">
-                <h5 className="rodape_titulo">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
-                <div className="linha_rodape">
+            <footer className="rodape-login">
+                <h5 className="rodape_titulo-login">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
+                <div className="linha_rodape-login">
                     <IconFacebook />
                     <IconTwitter />
                     <IconIfba />
