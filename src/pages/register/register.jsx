@@ -17,11 +17,11 @@ export default class RegisterPages extends Component{
 
     render(){
         return(
-           <div className="AppRoot">
-               <header className="App">
+           <div className="AppRoot-r1">
+               <header className="App-r1">
                     <form>
-                        <img className="App-icone" src={Logotipo} alt=""/>
-                        <div className="linha">
+                        <img className="App-icone-r1" src={Logotipo} alt=""/>
+                        <div className="linha-r1">
                             <IconLock className="iconLock" />
                             <h5>Cadastro perfil de Usuário.</h5>
                         </div>
@@ -29,12 +29,12 @@ export default class RegisterPages extends Component{
                         <Input type="text" placeholder="Descrição: "/>
                         <Button type="submit" name="Cadastrar"/>
                         <br />              
-                        <Link to="/" className="App-link">Voltar</Link>
+                        <Link to="/" className="App-link-r1">Voltar</Link>
                     </form>
                </header>
-               <footer className="rodape">
-                   <h5 className="rodape_titulo">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
-                   <div className="linha_rodape">
+               <footer className="rodape-r1">
+                   <h5 className="rodape_titulo-r1">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
+                   <div className="linha_rodape-r1">
                        <IconFacebook />
                        <IconTwitter />
                        <IconIfba />
