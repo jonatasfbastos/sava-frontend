@@ -23,7 +23,7 @@ function RegistrarCurso(){
                      </div>
                      <Input type="text" placeholder="Nome"/>
                      <Input type="text" placeholder="Código"/>
-                     <Button type="submit" name="Confirmar"/>
+                     <Button type="submit" >Confirmar</Button>
                      <br />              
                  </form>
             </header>

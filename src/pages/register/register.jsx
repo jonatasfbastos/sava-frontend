@@ -27,7 +27,7 @@ export default class RegisterPages extends Component{
                         </div>
                         <Input type="text" placeholder="Nome: "/>
                         <Input type="text" placeholder="Descrição: "/>
-                        <Button type="submit" name="Cadastrar"/>
+                        <Button type="submit" >Cadastrar</Button>
                         <br />              
                         <Link to="/" className="App-link-r1">Voltar</Link>
                     </form>

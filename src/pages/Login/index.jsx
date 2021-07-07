@@ -76,7 +76,7 @@ export default function LoginPages() {
                         value={user.password}
                         onChange={handleInputChange}
                     />
-                     <Button type="submit" name="Enviar"/>
+                     <Button type="submit" >Enviar</Button>
                      <br />              
                      <Link to="/password/recover" className="App-link-login">Recuperar Conta?</Link>
                  </form>

@@ -7,8 +7,8 @@ import './style.css';
 export default class Button extends Component{
     render(){
         return(
-            <button className="button" type={this.props.type}>
-                {this.props.name}
+            <button className="button" {...this.props}>
+                {this.props.children}
             </button>
         )
     }

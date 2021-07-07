@@ -23,7 +23,7 @@ class PasswordRecovery extends React.Component {
                 <p>Recuperar Conta</p>
               </div>
               <input type="text" name="" id="" class="login-entrada" placeholder="Login:" />
-              <Link to='/password/new'>Enviar</Link>
+              <Button className="recupera-botao">Enviar</Button>
               <div class="center-block">
                 <Link to='/login' class='link-voltar'>Voltar</Link>
               </div>
