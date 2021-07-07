@@ -1,4 +1,3 @@
-import './styles/global.css';
 import Routes from './routes';
 import {AuthContextProvider} from './contexts/AuthContext';
 
