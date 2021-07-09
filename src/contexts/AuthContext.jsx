@@ -10,6 +10,7 @@ export const AuthContext = createContext({});
 export function AuthContextProvider({children}) {
 
   const [user, setUser] = useState(null);
+  const [userId, setUserId] = useState(null);
 
   async function signIn(login, password) {
     const response = await api.get('/users/', {
@@ -30,8 +31,39 @@ export function AuthContextProvider({children}) {
     return true;
   }
 
+  async function authenticateOnlyLogin(login) {
+    const response = await api.get('/users/', {
+      params: {
+        login
+      }
+    });
+
+    if(!response.data[0]) {
+      console.log("Error: Check Login failed");
+      return false;
+    }
+
+    setUserId(response.data[0].id);
+
+    return true;
+  }
+
+  function signOut() {
+    setUserId(null);
+    setUser(null);
+  }
+
   return (
-    <AuthContext.Provider value={{signed:Boolean(user), user, signIn}}>
+    <AuthContext.Provider
+      value={{
+        signed:Boolean(user),
+        user,
+        signIn,
+        authenticateOnlyLogin,
+        userId,
+        signOut
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

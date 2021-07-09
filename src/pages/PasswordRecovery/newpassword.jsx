@@ -1,118 +1,106 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React , {useState} from 'react';
+import {Link, useHistory} from 'react-router-dom';
+import {useAuth} from '../../hooks/useAuth';
+import api from '../../services/api';
 import './style.css'
 import Button from '../../components/buttons';
-import InputComponent from '../../components/InputComponent/index'
-import api from '../../services/api';
+import InputComponent from '../../components/InputComponent/index';
 import logo from '../../icon/logotipo_sava.svg';
 import IconLock from '../../icon/lock';
 import IconFacebook from '../../icon/facebook';
 import IconTwitter from '../../icon/twitter';
 import IconIfba from '../../icon/ifba';
 
-class PasswordRecovery extends React.Component {
-  constructor(props) {
-    super(props);
+function PasswordRecovery() {
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmNewPassword, setConfirmNewPassword] = useState('');
+  const {userId, signOut} = useAuth();
+  const history = useHistory();
 
-    this.state = {
-      newPassword: '',
-      confirmNewPassword: ''
-    };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.checkPasswords = this.checkPasswords.bind(this);
-  }
-
-  handleSubmit(event) {
+  function handleSubmit(event) {
     event.preventDefault();
     
-    if(!this.checkPasswords()) {
+    if(!checkPasswords()) {
       alert("Senhas não compatíveis");
       return;
     }
-
-    window.alert("Tudo ok, mas ainda não :(");
-
-    // const {newPassword} = this.state;
     
-    // api.patch('/users', {
-    //   newPassword
-    // })
-
-  }
-
-  handleInputChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value
+    // Atualiza o somente a senha
+    api.patch(`/users/${userId}`, {
+      password: newPassword
+    }).then(response => {
+      if(response.data.id === userId) {
+        signOut();
+        window.confirm('Senha alterada com sucesso!');
+        history.push('/login');
+      }
+    }).catch(error => {
+      console.error(error);
     });
   }
 
-  checkPasswords() {
-    const {newPassword, confirmNewPassword} = this.state;
-
+  function checkPasswords() {
+    // Pode ter mais verificações aqui
     return newPassword.trim() === confirmNewPassword.trim();
   }
 
-  render() {
-    return(
-      <div className="pass-recovery">
-          <form onSubmit={this.handleSubmit} class="fundo-form">
-            <div class="content">
-              <div>
-                <img className="App-icone sava logo-sava" src={logo} alt=""/>
-              </div>
-              <div class="div-recupera">
-                <IconLock className="iconLock" />
-                <p>Recuperar Conta</p>
-              </div>
-              <InputComponent
-                minlength="8"
-                required
-                type="password"
-                name="newPassword"
-                class="login-entrada marg-bottom-15"
-                placeholder="Nova senha"
-                value={this.state.newPassword}
-                onChange={this.handleInputChange}
-              />
-
-              <InputComponent
-                minlength="8"
-                required
-                type="password"
-                name="confirmNewPassword"
-                class="login-entrada marg-bottom-15"
-                placeholder="Confirmar senha"
-                value={this.state.confirmNewPassword}
-                onChange={this.handleInputChange}
-              />
-
-              <Button
-                type="submit"
-                className="recupera-botao marg-top-30"
-              >
-                Enviar
-              </Button>
-              <div class="center-block">
-                <Link to='/login' class='link-voltar'>Voltar</Link>
-              </div>
+  return(
+    <div className="pass-recovery">
+        <form onSubmit={handleSubmit} class="fundo-form">
+          <div className="content">
+            <div>
+              <img className="App-icone sava logo-sava" src={logo} alt=""/>
             </div>
-          </form>
-
-          <footer className="App-footer">
-            <div class="content">
-              <h5 className="App-subtitle centraliza">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
-              <div class="social-m">
-                <IconFacebook className="App-facebook icon"/>
-                <IconTwitter className="App-twitter icon"/>
-                <IconIfba className="App-ifba icon" />
-              </div>
+            <div className="div-recupera">
+              <IconLock className="iconLock" />
+              <p>Recuperar Conta</p>
             </div>
-          </footer>
-      </div>
-    )
-  }
+            <InputComponent
+              minLength="8"
+              required
+              type="password"
+              name="newPassword"
+              className="login-entrada marg-bottom-15"
+              placeholder="Nova senha"
+              value={newPassword}
+              onChange={event => setNewPassword(event.target.value)}
+            />
+
+            <InputComponent
+              minLength="8"
+              required
+              type="password"
+              name="confirmNewPassword"
+              className="login-entrada marg-bottom-15"
+              placeholder="Confirmar senha"
+              value={confirmNewPassword}
+              onChange={event => setConfirmNewPassword(event.target.value)}
+            />
+
+            <Button
+              type="submit"
+              className="recupera-botao marg-top-30"
+            >
+              Enviar
+            </Button>
+            <div className="center-block">
+              <Link to='/login' className='link-voltar'>Voltar</Link>
+            </div>
+          </div>
+        </form>
+
+        <footer className="App-footer">
+          <div className="content">
+            <h5 className="App-subtitle centraliza">&copy; 2021 SAVA | Desenvolvimento IFBA.</h5>
+            <div className="social-m">
+              <IconFacebook className="App-facebook icon"/>
+              <IconTwitter className="App-twitter icon"/>
+              <IconIfba className="App-ifba icon" />
+            </div>
+          </div>
+        </footer>
+    </div>
+  )
 }
 
 export default PasswordRecovery;

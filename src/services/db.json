@@ -1,16 +1,19 @@
 {
   "users": [
     {
+      "id": 1,
       "name": "Fulano",
       "login": "admin",
       "password": "admin",
       "typeUser": "administrador"
     },
     {
+      "id": 2,
       "name": "Italo",
       "login": "20182",
       "password": "dipirona",
-      "typeUser": "aluno"
+      "typeUser": "aluno",
+      "newPassword": "12345678"
     }
   ]
 }

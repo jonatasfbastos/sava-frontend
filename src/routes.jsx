@@ -32,6 +32,28 @@ function PrivateRoute({component: Component, ...rest}) {
   );
 }
 
+function PrivateRouteOnlyLogin({component: Component, ...rest}) {
+  const {userId} = useAuth();
+
+  return (
+    <Route 
+      {...rest}
+      render={props => (
+        userId ? (
+          <Component {...props}/>
+        ):(
+          <Redirect
+            to={{
+              pathname: "/login",
+              state: {from: props.location}
+            }}
+          />
+        )
+      )}
+    />
+  );
+}
+
 
 function Routes() {
 
@@ -52,7 +74,7 @@ function Routes() {
 
         {/* Rotas para a tela de recuperação de senha */}
         <Route path="/password/recover" component={PasswordRecovery}/>
-        <Route path="/password/new" component={NewPassword}/>
+        <PrivateRouteOnlyLogin path="/password/new" component={NewPassword}/>
 
         {/* Rota para cadastrar tipo de usuário */}
         <PrivateRoute path="/register" component={Register}/>
