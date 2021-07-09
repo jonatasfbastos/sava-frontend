@@ -5,7 +5,7 @@
 
     /* Paleta de cores */
     --primary-color: #dad9ed;
-    --secondary-colo: #484761;
+    --secondary-color: #484761;
     --dark-gray: #65656f;
     --light-gray: #8d8d8e;
     
@@ -42,12 +42,16 @@
     /*color text form in */
     --color-text-form-in: #f3f3fa;
 }
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* index.css */
 body {
   background:var(--background);
   margin: 0;
   padding: 0;
-  font: 400 16px 'Roboto', sans-serif;
 }
 
   

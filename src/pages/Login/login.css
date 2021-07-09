@@ -20,7 +20,11 @@
     border-radius:5px;
     box-shadow: 2px 2px 2px 4px gray;
     color:var(--color-text-form-out);
-    padding:10px;
+    padding:10px 48px;
+}
+
+.App-login form button {
+    width: 100%;
 }
 
 /*icone logomarca*/
@@ -52,7 +56,7 @@
     flex-direction: row;
     margin-left:auto;
     margin-right:auto;
-    width:75%;
+    width:100%;
 }
 
 /*rodape da aplicação*/

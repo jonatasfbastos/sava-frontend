@@ -78,7 +78,7 @@ input{
     .inputUser{
         margin-top: 10px;
         font-weight:500;
-        width: 75%;
+        /* width: 75%; */
     }
     
     .inputPass{
@@ -99,7 +99,7 @@ input{
     .inputUser{
         margin-top: 10px;
         font-weight:500;
-        width: 75%;
+        /* width: 75%; */
     }
     
     .inputPass{
@@ -120,7 +120,7 @@ input{
     .inputUser{
         margin-top: 10px;
         font-weight:700;
-        width: 75%;
+        /* width: 75%; */
     }
     
     .inputPass{
