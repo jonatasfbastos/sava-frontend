@@ -15,5 +15,124 @@
       "typeUser": "aluno",
       "newPassword": "12345678"
     }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "Nome da turma",
+      "year": "2018",
+      "stepId": 99
+    },
+    {
+      "stepId": 4,
+      "year": "2019",
+      "name": "2-Informática - 2019",
+      "id": 4
+    },
+    {
+      "name": "1-Bio Combustíveis - 2021",
+      "year": "2021",
+      "stepId": 2,
+      "id": 5
+    },
+    {
+      "name": "1-Eletromecânica - 2020",
+      "year": "2020",
+      "stepId": 5,
+      "id": 6
+    },
+    {
+      "name": "2-Informática - 2016",
+      "year": "2016",
+      "stepId": 4,
+      "id": 7
+    },
+    {
+      "name": "2-Informática - 2015",
+      "year": "2015",
+      "stepId": 4,
+      "id": 8
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "name": "1-Informática",
+      "code": "<codeetapaum>",
+      "matrixId": 2,
+      "subjects": [],
+      "users": 2
+    },
+    {
+      "id": 2,
+      "name": "1-Bio Combustíveis",
+      "code": "<codeetapadois>",
+      "matrixId": 1,
+      "subjects": []
+    },
+    {
+      "id": 3,
+      "name": "2-Bio Combustíveis",
+      "code": "<codeetapadois>",
+      "matrixId": 1,
+      "subjects": []
+    },
+    {
+      "id": 4,
+      "name": "2-Informática",
+      "code": "<codeetapadois>",
+      "matrixId": 2,
+      "subjects": []
+    },
+    {
+      "id": 5,
+      "name": "1-Eletromecânica",
+      "code": "<codeetapadois>",
+      "matrixId": 3,
+      "subjects": []
+    }
+  ],
+  "matrices": [
+    {
+      "id": 1,
+      "name": "Matriz Bio Combustíveis",
+      "description": "bla bla bla bla",
+      "curseId": 2
+    },
+    {
+      "id": 2,
+      "name": "Matriz Informática",
+      "description": "00011 1110011 010 1000111",
+      "curseId": 1
+    },
+    {
+      "id": 3,
+      "name": "Matriz Eletromecânica",
+      "description": "blablabla mimimimi",
+      "curseId": 3
+    }
+  ],
+  "curses": [
+    {
+      "id": 1,
+      "name": "Infomatica",
+      "code": "<codecurseum>",
+      "matrixId": 2,
+      "coordinatorId": 2
+    },
+    {
+      "id": 2,
+      "name": "Bio Combustíveis",
+      "code": "<codecurseum>",
+      "matrixId": 1,
+      "coordinatorId": 7
+    },
+    {
+      "id": 3,
+      "name": "Eletromecânica",
+      "code": "<codecurseum>",
+      "matrixId": 3,
+      "coordinatorId": 9
+    }
   ]
 }

@@ -23,9 +23,12 @@
 #new-class main form {
   width: 400px;
   margin: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-#select-etapa {
+#new-class select {
   width: 100%;
   height: 40px;
   padding: 10px;
